@@ -1070,7 +1070,7 @@ S2.define('select2/results',[
         return;
       }
 
-      $highlighted.trigger('mouseup');
+      $highlighted.trigger('click');
     });
 
     container.on('results:select', function () {
@@ -1188,7 +1188,7 @@ S2.define('select2/results',[
       });
     }
 
-    this.$results.on('mouseup', '.select2-results__option[aria-selected]',
+    this.$results.on('click', '.select2-results__option[aria-selected]',
       function (evt) {
       var $this = $(this);
 
@@ -4851,7 +4851,7 @@ S2.define('select2/defaults',[
       var term = stripDiacritics(params.term).toUpperCase();
 
       // Check if the text contains the term
-      if (original.indexOf(term) > -1) {
+      if (original.lastIndexOf(term, 0) == 0) {
         return data;
       }
 
