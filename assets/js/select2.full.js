@@ -857,7 +857,7 @@ S2.define('select2/results',[
   };
 
   Results.prototype.highlightFirstItem = function () {
-    var $options = this.$results
+    /*var $options = this.$results
       .find('.select2-results__option[aria-selected]');
 
     var $selected = $options.filter('[aria-selected=true]');
@@ -872,7 +872,7 @@ S2.define('select2/results',[
       $options.first().trigger('mouseenter');
     }
 
-    this.ensureHighlightVisible();
+    this.ensureHighlightVisible();*/
   };
 
   Results.prototype.setClasses = function () {
