@@ -4288,10 +4288,10 @@ S2.define('select2/dropdown/attachBody',[
     }
 
     if (!enoughRoomBelow && enoughRoomAbove && !isCurrentlyAbove) {
-      newDirection = 'above';
+      //newDirection = 'above';
+	  newDirection = 'below';
     } else if (!enoughRoomAbove && enoughRoomBelow && isCurrentlyAbove) {
-      //newDirection = 'below';
-	  newDirection = 'above';
+      newDirection = 'below';
     }
 
     if (newDirection == 'above' ||
